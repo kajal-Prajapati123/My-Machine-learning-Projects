@@ -43,7 +43,7 @@ if st.button("Predict"):
    amount = features["Amount"]
 
    if amount == "" or amount is None:
-    st.error("Amount is required")
+       st.error("Amount is required")
    else:
         input_data["Amount"] = scl.transform(input_data[["Amount"]])
         prob = model.predict_proba(input_data)[0][1]
