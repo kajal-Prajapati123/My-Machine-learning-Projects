@@ -15,10 +15,10 @@ col1,col2 =  st.columns(2)
 
 with col1:
     st.subheader("Confusion Matrix")
-    st.image("Credit Card Fraud Model Confusion Matrix.png")
+    st.image("Fraud-detection-xgboost/Credit Card Fraud Model Confusion Matrix.png")
 with col2:
     st.subheader("ROC Curve")
-    st.image("Credit Card Fraud Model ROC Curve.png")
+    st.image("Fraud-detection-xgboost/Credit Card Fraud Model ROC Curve.png")
 
 model = pickle.load(open("fraud_model.pkl","rb"))
 scl = pickle.load(open("scaler.pkl","rb"))
